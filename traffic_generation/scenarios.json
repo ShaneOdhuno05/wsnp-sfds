@@ -1,0 +1,227 @@
+{
+  "normal": {
+    "duration": 30,
+    "expected": [],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "rate_only": {
+    "duration": 30,
+    "expected": [
+      "syn_packet_rate"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 40,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 40,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 40,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "ratio_only": {
+    "duration": 30,
+    "expected": [
+      "syn_ack_ratio"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 15,
+        "complete_handshake_ratio": 0.0,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "pattern_only": {
+    "duration": 30,
+    "expected": [
+      "anomalous_syn_pattern"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 1,
+        "pps": 6,
+        "complete_handshake_ratio": 0.0,
+        "spoof": true,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "rate_ratio": {
+    "duration": 30,
+    "expected": [
+      "syn_packet_rate",
+      "syn_ack_ratio"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 40,
+        "complete_handshake_ratio": 0.0,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 40,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "ratio_pattern": {
+    "duration": 30,
+    "expected": [
+      "syn_ack_ratio",
+      "anomalous_syn_pattern"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 1,
+        "pps": 15,
+        "complete_handshake_ratio": 0.0,
+        "spoof": true,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "full_attack": {
+    "duration": 30,
+    "expected": [
+      "syn_packet_rate",
+      "syn_ack_ratio",
+      "anomalous_syn_pattern"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 40,
+        "complete_handshake_ratio": 0.0,
+        "spoof": true,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 40,
+        "complete_handshake_ratio": 0.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 8,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  },
+  "stealth": {
+    "duration": 30,
+    "expected": [
+      "syn_ack_ratio"
+    ],
+    "streams": [
+      {
+        "source": 1,
+        "pps": 12,
+        "complete_handshake_ratio": 0.0,
+        "duration": 30
+      },
+      {
+        "source": 2,
+        "pps": 10,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      },
+      {
+        "source": 3,
+        "pps": 10,
+        "complete_handshake_ratio": 1.0,
+        "duration": 30
+      }
+    ]
+  }
+}

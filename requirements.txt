@@ -1,0 +1,14 @@
+# SN P SYN-flood detection pipeline — Python >= 3.12
+# (the code uses nested same-quote f-strings, a 3.12+ feature)
+
+# SN P simulator service (system/main.py)
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+
+# Pipeline driver (simulator.py, n_simulator.py)
+requests>=2.31
+matplotlib>=3.7
+
+# Traffic generation, capture & preprocessing (attacker/victim + data_preprocessor)
+scapy>=2.5.0

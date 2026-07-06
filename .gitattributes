@@ -1,0 +1,17 @@
+# Normalize line endings so the repo stores LF regardless of the committing OS.
+* text=auto
+
+# The lab setup script runs under bash on Linux -- it must stay LF on every checkout,
+# or a Windows-side clone would hand Linux a script full of carriage returns.
+*.sh text eol=lf
+
+# Plain-text sources and data.
+*.py  text
+*.md  text
+*.json text
+*.csv text
+*.txt text
+
+# Binary assets.
+*.png  binary
+*.pcap binary

@@ -1,0 +1,572 @@
+{
+  "neurons": [
+    {
+      "id": "Packets_1",
+      "type": "input",
+      "content": "5",
+      "position": {
+        "x": 0,
+        "y": 225.0
+      }
+    },
+    {
+      "id": "AnomalousSYN_1(2)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^2/a^2\\to a;0",
+        "a/a\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^4/a^4\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 0
+      }
+    },
+    {
+      "id": "NormalSYN_1(3)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^3/a^3\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^4/a^4\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 150
+      }
+    },
+    {
+      "id": "NormalACK_1(4)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^4/a^4\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 300
+      }
+    },
+    {
+      "id": "StreamEndDetector_1",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^5/a^5\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^4/a^4\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 450
+      }
+    },
+    {
+      "id": "RatioDetector_1",
+      "type": "regular",
+      "content": "42000",
+      "rules": [
+        "a^{60001}(a)^{\\ast}/a^{60001}(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 720,
+        "y": 225.0
+      }
+    },
+    {
+      "id": "Packets_2",
+      "type": "input",
+      "content": "5",
+      "position": {
+        "x": 0,
+        "y": 865.0
+      }
+    },
+    {
+      "id": "AnomalousSYN_2(2)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^2/a^2\\to a;0",
+        "a/a\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^4/a^4\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 640
+      }
+    },
+    {
+      "id": "NormalSYN_2(3)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^3/a^3\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^4/a^4\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 790
+      }
+    },
+    {
+      "id": "NormalACK_2(4)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^4/a^4\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 940
+      }
+    },
+    {
+      "id": "StreamEndDetector_2",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^5/a^5\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^4/a^4\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 1090
+      }
+    },
+    {
+      "id": "RatioDetector_2",
+      "type": "regular",
+      "content": "42000",
+      "rules": [
+        "a^{60001}(a)^{\\ast}/a^{60001}(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 720,
+        "y": 865.0
+      }
+    },
+    {
+      "id": "Packets_3",
+      "type": "input",
+      "content": "5",
+      "position": {
+        "x": 0,
+        "y": 1505.0
+      }
+    },
+    {
+      "id": "AnomalousSYN_3(2)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^2/a^2\\to a;0",
+        "a/a\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^4/a^4\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 1280
+      }
+    },
+    {
+      "id": "NormalSYN_3(3)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^3/a^3\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^4/a^4\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 1430
+      }
+    },
+    {
+      "id": "NormalACK_3(4)",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^4/a^4\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^5/a^5\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 1580
+      }
+    },
+    {
+      "id": "StreamEndDetector_3",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^5/a^5\\to a;0",
+        "a/a\\to\\lambda",
+        "a^2/a^2\\to\\lambda",
+        "a^3/a^3\\to\\lambda",
+        "a^4/a^4\\to\\lambda"
+      ],
+      "position": {
+        "x": 360,
+        "y": 1730
+      }
+    },
+    {
+      "id": "RatioDetector_3",
+      "type": "regular",
+      "content": "42000",
+      "rules": [
+        "a^{60001}(a)^{\\ast}/a^{60001}(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 720,
+        "y": 1505.0
+      }
+    },
+    {
+      "id": "RateDetector",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^{60}(a)^{\\ast}/a^{60}(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 1080,
+        "y": 0
+      }
+    },
+    {
+      "id": "PatternDetector",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^{3}(a)^{\\ast}/a^{3}(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 1080,
+        "y": 150
+      }
+    },
+    {
+      "id": "RatioOR",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a(a)^{\\ast}/a(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 1080,
+        "y": 300
+      }
+    },
+    {
+      "id": "RateFlag",
+      "type": "regular",
+      "content": "2",
+      "rules": [
+        "a^3/a^3\\to a;0",
+        "a/a\\to\\lambda"
+      ],
+      "position": {
+        "x": 1440,
+        "y": 0
+      }
+    },
+    {
+      "id": "RatioFlag",
+      "type": "regular",
+      "content": "2",
+      "rules": [
+        "a^3/a^3\\to a;0",
+        "a/a\\to\\lambda"
+      ],
+      "position": {
+        "x": 1440,
+        "y": 150
+      }
+    },
+    {
+      "id": "PatternFlag",
+      "type": "regular",
+      "content": "2",
+      "rules": [
+        "a^3/a^3\\to a;0",
+        "a/a\\to\\lambda"
+      ],
+      "position": {
+        "x": 1440,
+        "y": 300
+      }
+    },
+    {
+      "id": "Decision",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^{2}(a)^{\\ast}/a^{2}(a)^{\\ast}\\to a;0"
+      ],
+      "position": {
+        "x": 1800,
+        "y": 150
+      }
+    },
+    {
+      "id": "Output",
+      "type": "output",
+      "content": "",
+      "position": {
+        "x": 2160,
+        "y": 150
+      }
+    }
+  ],
+  "synapses": [
+    {
+      "from": "Packets_1",
+      "to": "AnomalousSYN_1(2)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_1",
+      "to": "NormalSYN_1(3)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_1",
+      "to": "NormalACK_1(4)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_1",
+      "to": "StreamEndDetector_1",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_1(2)",
+      "to": "RatioDetector_1",
+      "weight": 30
+    },
+    {
+      "from": "NormalSYN_1(3)",
+      "to": "RatioDetector_1",
+      "weight": 30
+    },
+    {
+      "from": "NormalACK_1(4)",
+      "to": "RatioDetector_1",
+      "weight": -70
+    },
+    {
+      "from": "StreamEndDetector_1",
+      "to": "RatioDetector_1",
+      "weight": 18000
+    },
+    {
+      "from": "RatioDetector_1",
+      "to": "RatioOR",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_1(2)",
+      "to": "RateDetector",
+      "weight": 1
+    },
+    {
+      "from": "NormalSYN_1(3)",
+      "to": "RateDetector",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_1(2)",
+      "to": "PatternDetector",
+      "weight": 1
+    },
+    {
+      "from": "Packets_2",
+      "to": "AnomalousSYN_2(2)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_2",
+      "to": "NormalSYN_2(3)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_2",
+      "to": "NormalACK_2(4)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_2",
+      "to": "StreamEndDetector_2",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_2(2)",
+      "to": "RatioDetector_2",
+      "weight": 30
+    },
+    {
+      "from": "NormalSYN_2(3)",
+      "to": "RatioDetector_2",
+      "weight": 30
+    },
+    {
+      "from": "NormalACK_2(4)",
+      "to": "RatioDetector_2",
+      "weight": -70
+    },
+    {
+      "from": "StreamEndDetector_2",
+      "to": "RatioDetector_2",
+      "weight": 18000
+    },
+    {
+      "from": "RatioDetector_2",
+      "to": "RatioOR",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_2(2)",
+      "to": "RateDetector",
+      "weight": 1
+    },
+    {
+      "from": "NormalSYN_2(3)",
+      "to": "RateDetector",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_2(2)",
+      "to": "PatternDetector",
+      "weight": 1
+    },
+    {
+      "from": "Packets_3",
+      "to": "AnomalousSYN_3(2)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_3",
+      "to": "NormalSYN_3(3)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_3",
+      "to": "NormalACK_3(4)",
+      "weight": 1
+    },
+    {
+      "from": "Packets_3",
+      "to": "StreamEndDetector_3",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_3(2)",
+      "to": "RatioDetector_3",
+      "weight": 30
+    },
+    {
+      "from": "NormalSYN_3(3)",
+      "to": "RatioDetector_3",
+      "weight": 30
+    },
+    {
+      "from": "NormalACK_3(4)",
+      "to": "RatioDetector_3",
+      "weight": -70
+    },
+    {
+      "from": "StreamEndDetector_3",
+      "to": "RatioDetector_3",
+      "weight": 18000
+    },
+    {
+      "from": "RatioDetector_3",
+      "to": "RatioOR",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_3(2)",
+      "to": "RateDetector",
+      "weight": 1
+    },
+    {
+      "from": "NormalSYN_3(3)",
+      "to": "RateDetector",
+      "weight": 1
+    },
+    {
+      "from": "AnomalousSYN_3(2)",
+      "to": "PatternDetector",
+      "weight": 1
+    },
+    {
+      "from": "RateDetector",
+      "to": "RateFlag",
+      "weight": 1
+    },
+    {
+      "from": "RatioOR",
+      "to": "RatioFlag",
+      "weight": 1
+    },
+    {
+      "from": "PatternDetector",
+      "to": "PatternFlag",
+      "weight": 1
+    },
+    {
+      "from": "RatioFlag",
+      "to": "Decision",
+      "weight": 1
+    },
+    {
+      "from": "RateFlag",
+      "to": "Decision",
+      "weight": 1
+    },
+    {
+      "from": "PatternFlag",
+      "to": "Decision",
+      "weight": 1
+    },
+    {
+      "from": "Decision",
+      "to": "Output",
+      "weight": 1
+    }
+  ]
+}
