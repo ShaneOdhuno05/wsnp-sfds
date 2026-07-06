@@ -30,7 +30,7 @@ The three features stay **independent views** — the system exposes each one ra
 On top of them sits a single alarm: a `Decision` neuron takes a **flat 2-of-3 majority** vote and fires when at
 least two of the three features agree:
 
-$$\text{alarm} \;=\; \big[\, \text{rate} + \text{ratio} + \text{pattern} \;\ge\; 2 \,\big].$$
+$$\text{alarm} = \big[ \text{rate} + \text{ratio} + \text{pattern} \ge 2 \big].$$
 
 No single feature raises the alarm alone — a lone ratio trip is ambiguous at low volume (a client retrying a
 dead service, or a handshake whose ACK lands in the next window, looks the same as a stealthy half-open source).
@@ -101,7 +101,7 @@ label straight from a capture CSV, so the SN P detector's output can be checked 
   (`ip netns`, a bridge, `veth` pairs). Everything downstream — encoding, the SN P engine, the drivers, and the
   oracle — is cross-platform and runs against the included reference captures without the lab.
 
-All commands below are run **from the `Methodology/` directory** (the modules import each other by top-level name,
+All commands below are run **from the repository root** (the modules import each other by top-level name,
 and `snp_engine` must be importable as a package).
 
 ---
@@ -126,7 +126,7 @@ This serves `POST /simulate` on `http://localhost:8000` (the default `simulator.
 
 ### 2. Run a capture through the detector
 
-In another terminal (still in `Methodology/`):
+In another terminal (still at the repository root):
 
 ```bash
 python simulator.py per-source \
@@ -148,7 +148,7 @@ Notes on the arguments:
 - **`--expected-result`** is the ground-truth label as a 3-char `rate,ratio,pattern` string of `T`/`F` (e.g.
   `TTF`). It is only used for scoring, not detection — see the table below.
 - **`--export-dir-path`** should end in a directory **named after the capture file** (without `.csv`). The encoder
-  derives window filenames from that name, so they must match. Use a single-level name (its parent is `Methodology/`).
+  derives window filenames from that name, so they must match. Use a single-level name (its parent is the repository root).
 - The positional `SYSTEM` argument (`per-source` above) is retained for backward compatibility and **ignored** at
   runtime — the system is built in memory by `per_source_builder`. Pass any placeholder.
 

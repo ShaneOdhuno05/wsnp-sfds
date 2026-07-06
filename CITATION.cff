@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Weighted SN P SYN-Flood Detection — Methodology"
+authors:
+  - family-names: "Abucay"
+    given-names: "Jacky John D."
+  - family-names: "Odhuno"
+    given-names: "Shane I."
+  - family-names: "Buño"
+    given-names: "Kelvin C."
+  - family-names: "Cabarle"
+    given-names: "Francis George C."
+license: MIT
+repository-code: "https://github.com/ShaneOdhuno05/wsnp-sfds"
+preferred-citation:
+  type: conference-paper
+  title: "A Weighted Spiking Neural P Systems Approach to Distributed SYN Flood Detection"
+  authors:
+    - family-names: "Abucay"
+      given-names: "Jacky John D."
+    - family-names: "Odhuno"
+      given-names: "Shane I."
+    - family-names: "Buño"
+      given-names: "Kelvin C."
+    - family-names: "Cabarle"
+      given-names: "Francis George C."
+  year: 2026
+  conference:
+    name: "International Conference on Membrane Computing 2026"

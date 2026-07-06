@@ -82,7 +82,7 @@ ranges the traffic generator uses, and non-routable so lab traffic never escapes
 ## Standalone end-to-end example
 
 ```bash
-# From Methodology/. Window a capture into ./my_run/ ...
+# From the repository root. Window a capture into ./my_run/ ...
 python packet_encoding/data_preprocessor.py \
     traffic_generation/experiments/full_attack_2026-06-26_150822.csv \
     --export-dir-path my_run

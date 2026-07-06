@@ -221,13 +221,13 @@ and that turns out to be enough.
 
 Start from the inequality and clear the fraction (valid because $S + A > 0$):
 
-$$\frac{S}{S + A} > R \quad\Longleftrightarrow\quad S > R\,(S + A)$$
+$$\frac{S}{S + A} > R \quad\Longleftrightarrow\quad S > R(S + A)$$
 
 Write the threshold as a ratio of whole numbers, $R = \text{ratio}/\text{base}$ (for $R = 0.70$,
 take $\text{ratio} = 70$ and $\text{base} = 100$). Multiplying through by $\text{base}$ gives an
 all-integer test:
 
-$$\text{base}\cdot S \;>\; \text{ratio}\cdot(S + A) \quad\Longleftrightarrow\quad (\text{base} - \text{ratio})\cdot S \;-\; \text{ratio}\cdot A \;>\; 0$$
+$$\text{base}\cdot S > \text{ratio}\cdot(S + A) \quad\Longleftrightarrow\quad (\text{base} - \text{ratio})\cdot S - \text{ratio}\cdot A > 0$$
 
 Now it is just addition and subtraction, which weighted synapses do directly. `build_system`
 turns the two coefficients into synapse weights, plus two offsets keyed to $H$ — the most packets
@@ -260,7 +260,7 @@ Two practical wrinkles are handled by those offsets:
    marker arrives does `StreamEndDetector_i` add the final $(\text{base} - \text{ratio})\cdot H$,
    lifting the total to
 
-   $$\text{base}\cdot H \;+\; (\text{base} - \text{ratio})\cdot S \;-\; \text{ratio}\cdot A$$
+   $$\text{base}\cdot H + (\text{base} - \text{ratio})\cdot S - \text{ratio}\cdot A$$
 
    which clears $\text{base}\cdot H + 1$ exactly when $(\text{base} - \text{ratio})\cdot S - \text{ratio}\cdot A > 0$
    — that is, exactly when $S/(S + A) > R$.

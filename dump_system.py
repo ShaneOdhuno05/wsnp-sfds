@@ -7,7 +7,7 @@ at runtime (the simulator builds the system in memory), so regenerate it with th
 whenever the builder changes. For the same system in the visual simulator's dialect instead,
 see ``websnapse_export.py``.
 
-Usage (from the Methodology/ directory):
+Usage (from the repository root):
     python dump_system.py [--sources N] [--out FILE]
 """
 

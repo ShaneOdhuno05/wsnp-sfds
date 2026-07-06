@@ -15,7 +15,7 @@ same spike counts as the original before the file is written.
 This produces a file for the *external* Websnapse tool and cannot be loaded here, so confirm it
 opens by loading the output in Websnapse itself.
 
-Usage (from the Methodology/ directory):
+Usage (from the repository root):
     python websnapse_export.py [--sources N] [--out FILE]
 """
 
